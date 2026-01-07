@@ -1,0 +1,92 @@
+#home {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+
+  transition: opacity 260ms ease, transform 260ms ease;
+
+  z-index: 1;
+}
+
+#home.hidden {
+  opacity: 0;
+  transform: scale(0.98);
+  pointer-events: none;
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  animation: homeFadeIn var(--normal) var(--ease-out) forwards;
+}
+
+.home-name {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.home-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.home-hint {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+@keyframes homeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#home {
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.home-glow {
+  position: absolute;
+  inset: -40%;
+  pointer-events: none;
+  background: radial-gradient(
+    600px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.04),
+    transparent 60%
+  );
+  filter: blur(100px);
+  opacity: 0.9;
+  transition: background-position 0.08s linear;
+  z-index: 0;
+}
+.home-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background-image: url("/assets/images/noise.png");
+  background-repeat: repeat;
+  background-size: 64px 64px;
+
+  opacity: 0.02;
+  mix-blend-mode: overlay;
+}

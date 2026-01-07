@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temo Aguilar | Portfolio</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/resume.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <section id="home" class="content-section">
+        <div class="home-glow"></div>
+        <div class="home-content">
+          <h1 class="home-name">Cuauhtemoc Aguilar Mandujano</h1>
+          <h2 class="home-title">Computer Science Undergrad</h2>
+          <p class="home-hint">Click anywhere</p>
+        </div>
+      </section>
+
+      <nav id="context-menu" class="hidden">
+        <ul>
+          <li data-target="about">About Me</li>
+          <li data-target="projects">Projects</li>
+          <li data-target="experience">Experience</li>
+          <li data-target="resume">Resume</li>
+          <li data-target="contact">Contact</li>
+          <li class="divider"></li>
+          <li data-external="https://github.com/aguilcua">GitHub</li>
+          <li
+            data-external="https://www.linkedin.com/in/cuauhtemoc-aguilar-mandujano/"
+          >
+            LinkedIn
+          </li>
+        </ul>
+      </nav>
+
+      <main id="content">
+        <section id="about" class="content-section hidden">
+          <div class="about-bg">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="about-card glass">
+            <h1 class="about-title">About Me</h1>
+
+            <p class="about-intro">
+              I am a undergraduate senior finishing my studies at the University
+              of Washington. I have intermediate experience working with
+              computer systems and software development tools. I am currently
+              seeking a new grad position and open for work.
+            </p>
+
+            <div class="about-grid">
+              <div class="about-item">
+                <h3>Focus</h3>
+                <p>
+                  Backend systems, interactive applications, and
+                  performance-conscious design.
+                </p>
+              </div>
+
+              <div class="about-item">
+                <h3>Background</h3>
+                <p>
+                  Web development, game systems, and cloud-based architectures.
+                </p>
+              </div>
+
+              <div class="about-item">
+                <h3>Philosophy</h3>
+                <p>
+                  Simplicity, User centered design, and deliberate interaction
+                  design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="content-section">
+          <h1 class="projects-title">Projects</h1>
+          <div class="projects-list">
+            <article class="project-card active">
+              <div class="project-header">
+                <h2 class="project-title">
+                  <a
+                    href="https://github.com/aguilcua/cafetyper?tab=readme-ov-file"
+                    target="_blank"
+                    rel="noopener"
+                    data-no-menu
+                  >
+                    Café Typer
+                  </a>
+                </h2>
+              </div>
+
+              <div class="project-body">
+                <div class="project-media">
+                  <a
+                    href="https://github.com/aguilcua/cafetyper?tab=readme-ov-file"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-media-link"
+                    ><img
+                      src="assets/images/cafetyperTitle.png"
+                      alt="Café Typer preview"
+                      data-no-menu
+                  /></a>
+                </div>
+
+                <div class="project-info">
+                  <p class="project-description">
+                    A solo project featuring a roguelike typing game where
+                    players manage a café by typing orders customer orders under
+                    increasing presssure. (in progress)
+                  </p>
+
+                  <ul class="project-tech">
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Game Design</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article class="project-card active">
+              <div class="project-header">
+                <h2 class="project-title">
+                  <a
+                    href="https://temocam.itch.io/time-of-death"
+                    target="_blank"
+                    rel="noopener"
+                    data-no-menu
+                  >
+                    Time of Death
+                  </a>
+                </h2>
+              </div>
+
+              <div class="project-body">
+                <div class="project-media">
+                  <a
+                    href="https://temocam.itch.io/time-of-death"
+                    target="_blank"
+                    class="project-media-link"
+                    rel="noopener"
+                    ><img
+                      src="assets/images/timeofdeath.png"
+                      alt="Time of Death preview"
+                      data-no-menu
+                  /></a>
+                </div>
+
+                <div class="project-info">
+                  <p class="project-description">
+                    A top down zombie shooter game developed during a weeklong
+                    gamejam using public assets in collaboration with one other
+                    student. Designed and programmed Enemy AI, player controls,
+                    and interactive UI. learned C# and Unity in 3 days and
+                    implemented all combat mechanics.
+                  </p>
+
+                  <ul class="project-tech">
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>aseprite</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article class="project-card active">
+              <div class="project-header">
+                <h2 class="project-title">
+                  <a
+                    href="https://github.com/aguilcua/storage_management_test"
+                    target="_blank"
+                    rel="noopener"
+                    data-no-menu
+                  >
+                    Web storage mockup
+                  </a>
+                </h2>
+              </div>
+
+              <div class="project-body">
+                <div class="project-media">
+                  <a
+                    href="https://storage-management-test.vercel.app/sign-in"
+                    target="_blank"
+                    class="project-media-link"
+                    rel="noopener"
+                    ><img
+                      src="assets/images/webstorage.png"
+                      alt="Web storage preview"
+                      data-no-menu
+                  /></a>
+                </div>
+
+                <div class="project-info">
+                  <p class="project-description">
+                    A storage clone created to practice frontend development
+                    using web technologies. Allows users to upload and download
+                    over 10 types of files with user auth. used Appwrite for
+                    backend storage and user authentication, and git for version
+                    control.
+                  </p>
+
+                  <ul class="project-tech">
+                    <li>Typescript</li>
+                    <li>Next.js</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="content-section">
+          <h1 class="experiences-title">Experience</h1>
+          <div class="experience-wrapper scrollable">
+            <div class="experience-list">
+              <article class="experience-card glass">
+                <header class="experience-header">
+                  <div>
+                    <h2 class="experience-role">Fellow</h2>
+                    <p class="experience-company">Code2040</p>
+                  </div>
+
+                  <span class="experience-time">2024 - 2025</span>
+                </header>
+
+                <p class="experience-description">
+                  Participated in a fellowship dedicated to advancing racial
+                  equity in the tech industry through development of technical
+                  and soft skills.
+                </p>
+              </article>
+
+              <article class="experience-card glass">
+                <header class="experience-header">
+                  <div>
+                    <h2 class="experience-role">Mentee experience</h2>
+                    <p class="experience-company">Microsoft Turn 10 studios</p>
+                  </div>
+
+                  <span class="experience-time">2024</span>
+                </header>
+
+                <p class="experience-description">
+                  Engaged in a mentorship event at Microsoft Turn 10 studios
+                  gaining insights on game development and industry standards.
+                </p>
+              </article>
+
+              <article class="experience-card glass">
+                <header class="experience-header">
+                  <div>
+                    <h2 class="experience-role">Warehouse Associate</h2>
+                    <p class="experience-company">Amazon</p>
+                  </div>
+
+                  <span class="experience-time"
+                    >June 2024 – September 2024</span
+                  >
+                </header>
+
+                <p class="experience-description">
+                  Processed individual packages daily, collaborated with team
+                  members with proper communication. optimized workflow, and
+                  consistently meeting deadlines. Utilized organizational skills
+                  to manage and prioritize tasks.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="resume" class="content-section hidden">
+          <div class="resume-wrapper glass">
+            <div class="resume-header">
+              <h1>Resume</h1>
+
+              <a
+                href="assets/Cuauhtemoc Aguilar Mandujano Resume OCT.pdf"
+                download
+                class="resume-download"
+                data-no-menu
+              >
+                Download PDF
+              </a>
+            </div>
+
+            <div class="resume-viewer">
+              <iframe
+                src="assets/Cuauhtemoc Aguilar Mandujano Resume OCT.pdf#zoom=100"
+                title="Resume PDF"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="content-section hidden">
+          <div class="contact-card glass">
+            <h1 class="contact-title">Contact</h1>
+
+            <p class="contact-intro">
+              I am currently located in the <b>Seattle</b> Area. Feel free to
+              reach out for opportunities or questions about projects. at
+              <b>temoaguilarm@gmail.com</b>
+            </p>
+
+            <div class="contact-actions">
+              <a href="mailto:temoaguilarm@gmail.com" class="contact-primary">
+                Email Me
+              </a>
+
+              <div class="contact-links">
+                <a
+                  href="https://github.com/aguilcua"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                  class="contact-icon"
+                  data-no-menu
+                >
+                  <img src="assets/icons/github-mark.svg" alt="" />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/cuauhtemoc-aguilar-mandujano/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  class="contact-icon"
+                  data-no-menu
+                >
+                  <img src="assets/icons/linkedin.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/state.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/home-glow.js"></script>
+  </body>
+</html>

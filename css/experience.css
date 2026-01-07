@@ -1,0 +1,60 @@
+.experience-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  mask-image: linear-gradient(to bottom, black 8%, black 92%, transparent);
+}
+.scrollable {
+  max-height: 100%;
+  overflow-y: auto;
+  padding-right: 1rem;
+  scrollbar-width: none;
+}
+.scrollable::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  padding: 2rem 2.2rem;
+  border-radius: var(--radius);
+  animation: sectionFadeIn var(--normal) var(--ease-out);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-role {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.experience-company {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.experience-time {
+  font-size: 0.85rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.experience-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+}

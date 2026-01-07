@@ -1,0 +1,42 @@
+#about {
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.about-card {
+  max-width: 900px;
+  width: 100%;
+  padding: 2.5rem 3rem;
+
+  animation: sectionFadeIn var(--normal) var(--ease-out);
+}
+
+.about-title {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-intro {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.about-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--muted);
+}

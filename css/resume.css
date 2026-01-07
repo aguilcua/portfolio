@@ -1,0 +1,48 @@
+.resume-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+}
+
+/* Header */
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resume-download {
+  font-size: 0.9rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  color: var(--fg);
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.resume-download:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* Viewer */
+.resume-viewer {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.resume-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

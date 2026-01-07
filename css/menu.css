@@ -1,0 +1,53 @@
+#context-menu {
+  position: fixed;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  z-index: 20;
+
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity var(--fast) var(--ease-out),
+    transform var(--fast) var(--ease-out);
+}
+
+#context-menu.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#context-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#context-menu li {
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  color: var(--fg);
+  cursor: pointer;
+  user-select: none;
+  transition: background var(--fast);
+}
+
+#context-menu li:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+#context-menu li.divider {
+  height: 1px;
+  margin: 0.4rem 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: default;
+}
+
+#context-menu.hidden {
+  display: none;
+}
