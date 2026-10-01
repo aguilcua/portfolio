@@ -15,6 +15,7 @@
         <div class="nav-container">
             <a href="#intro" class="nav-logo">CAM</a>
             <nav class="nav-links">
+                <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
                 <a href="#resume">Resume</a>
@@ -27,10 +28,22 @@
         <section class="section" id="intro">
             <h3 class="hero-intro">Hello, my name is</h3>
             <h1 class="hero-name">Cuauhtemoc Aguilar Mandujano</h1>
-            <h4 class="hero-title">Data Centric New Grad</h4>
+            <h4 class="hero-title">Software engineer/data analyst</h4>
             <div class="hero-actions">
                 <a href="#projects" class="btn primary-btn">Projects</a>
                 <a href="#contact" class="btn secondary-btn">Get in touch</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div style="display: flex; flex-direction: column; gap: 1rem;" class="reveal">
+                <p>I graduated from UW Tacoma in March 2026 with a BA in Computer Science and Systems and a minor in
+                    Business Data Analytics. I like projects where I build the app and work with the data behind it. One of my most recent projects is 
+                    Auto Guesser, a Next.js app with its own Naive Bayes engine. Recent data heavy projects include my salary predictor based on a dataset of 
+                    250,000 job postings. Right now I do AI training work, reviewing and debugging
+                    model-written code. I am currently looking for a software engineer or analyst role.</p>
             </div>
         </section>
 
@@ -38,7 +51,7 @@
             <h2 class="section-title">Projects</h2>
             <div class="project-container">
                 <div class="project-card reveal">
-                    <a class="project-hero" href="#" target="_blank" rel="noopener"
+                    <a class="project-hero" href="https://auto-guesser.vercel.app/" target="_blank" rel="noopener"
                         aria-label="Open the Auto Guesser live demo">
                         <img src="media/images/auto_guesser.png" alt="Auto Guesser game screen">
                         <span class="project-hero-badge">View live demo</span>
@@ -46,15 +59,17 @@
                     <div class="tech-header">
                         <h3>Auto Guesser</h3>
                         <div class="project-links">
-                            <a href="">Code</a>
-                            <a href="">Demo</a>
+                            <a href="https://github.com/aguilcua/auto-guesser">Code</a>
+                            <a href="https://auto-guesser.vercel.app/">Demo</a>
                         </div>
                     </div>
-                    <p class="project-desc">Auto Guesser is a crowdsourced, digital "20 Questions" game designed for car
-                        enthusiasts. Players think of a specific vehicle, and the engine asks a series of strategic
-                        questions to narrow down the possibilities. Powered by a custom Naive Bayes probabilistic model,
-                        the engine dynamically recalculates the board after every answer to reduce entropy and
-                        confidently guess the target vehicle.</p>
+                    <p class="project-desc">A 20 Questions game for cars. You think of a vehicle and it asks questions
+                        until it makes a final guess. A Naive Bayes model picks the question that best splits the
+                        remaining
+                        candidates each turn. It covers 100+ vehicles across 60+ attributes, and players can add new
+                        cars, so the database grows as people use it. Currently the model is able to make final guesses
+                        on average by the 12th question depending on how niche the vehicle model is. Caching Wikimedia
+                        images in the database cut load times by about 15%.</p>
                     <div class="tech-container">
                         <img class="tech-badge"
                             src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=ffffff"
@@ -98,9 +113,11 @@
                             <a href="https://job-salary-data-analysis-sgh3guxrlgvch7gp6azncf.streamlit.app/">Demo</a>
                         </div>
                     </div>
-                    <p class="project-desc">An end-to-end data analytics project analyzing 250,000 job postings to
-                        identify salary drivers, uncover market trends, and deploy a machine learning salary predictor
-                        as a live web application.</p>
+                    <p class="project-desc">A project exploring the current tech job market in terms of salary. Analysis
+                        was based on 250,000 job postings and identified location and job title as the strongest salary
+                        predictors. Dataset was used to train a Random Forest Regression model achieving R² of 0.969 and
+                        MAE of $5,171 on 250,000 records. Findings were presented through a three page Power BI
+                        dashboard including visualizations of trends.</p>
                     <div class="tech-container">
                         <img class="tech-badge"
                             src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=ffffff"
@@ -131,10 +148,11 @@
                             <a href="https://michi9450.github.io/491_Time_Platformer/">Demo</a>
                         </div>
                     </div>
-                    <p class="project-desc">Dimension Shift is a browser-based puzzle platformer developed in JavaScript
-                        where players switch between two dimensions to navigate through obstacles and reach the exit.
-                        The core mechanic allows the player to switch between different dimensional states of the world,
-                        altering the environment and revealing new pathways that are inaccessible in other states.</p>
+                    <p class="project-desc">A browser puzzle platformer, built using vanilla JavaScript, where you flip
+                        between two versions of the same
+                        level to find paths that only exist in one. Built with a four-person team in week-long sprints:
+                        10 levels, plus custom physics, collision, and camera code in plain JavaScript. I wrote
+                        animation code, physics code and audio implementation.</p>
                     <div class="tech-container">
                         <img class="tech-badge"
                             src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=000000"
@@ -186,12 +204,8 @@
                 <div class="timeline-item reveal">
                     <h3>Freelance AI Trainer</h3>
                     <p class="timeline-meta">DataAnnotation, May 2026 – Present</p>
-                    <p>Benchmarked model outputs against strict technical guidelines, grading responses for factual
-                        accuracy, security vulnerabilities, and
-                        structural integrity. Completed 300+ tasks creating comprehensive test cases and debugging
-                        algorithms to train models
-                        in code generation, edge-case
-                        handling, and runtime efficiency</p>
+                    <p>Freelance AI trainer, May 2026 – present. I review and debug AI-written Python, write test cases,
+                        and grade model outputs for correctness, security, and structure. 300+ tasks so far.</p>
                 </div>
                 <div class="timeline-item reveal">
                     <h3>Fellow</h3>
