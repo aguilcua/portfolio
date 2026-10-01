@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuauhtemoc Aguilar Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
+    <div class="glow" aria-hidden="true"></div>
+
     <header class="navbar">
         <div class="nav-container">
+            <a href="#intro" class="nav-logo">CAM</a>
             <nav class="nav-links">
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
@@ -24,13 +27,22 @@
         <section class="section" id="intro">
             <h3 class="hero-intro">Hello, my name is</h3>
             <h1 class="hero-name">Cuauhtemoc Aguilar Mandujano</h1>
-            <h4 class="hero-title"> Software Engineer</h4>
+            <h4 class="hero-title">Data Centric New Grad</h4>
+            <div class="hero-actions">
+                <a href="#projects" class="btn primary-btn">Projects</a>
+                <a href="#contact" class="btn secondary-btn">Get in touch</a>
+            </div>
         </section>
 
         <section class="section" id="projects">
             <h2 class="section-title">Projects</h2>
             <div class="project-container">
-                <div class="project-card">
+                <div class="project-card reveal">
+                    <a class="project-hero" href="#" target="_blank" rel="noopener"
+                        aria-label="Open the Auto Guesser live demo">
+                        <img src="media/images/auto_guesser.png" alt="Auto Guesser game screen">
+                        <span class="project-hero-badge">View live demo</span>
+                    </a>
                     <div class="tech-header">
                         <h3>Auto Guesser</h3>
                         <div class="project-links">
@@ -39,48 +51,46 @@
                         </div>
                     </div>
                     <p class="project-desc">Auto Guesser is a crowdsourced, digital "20 Questions" game designed for car
-                        enthusiast. Players think of a specific vehicle, and the engine asks a series of strategic
+                        enthusiasts. Players think of a specific vehicle, and the engine asks a series of strategic
                         questions to narrow down the possibilities. Powered by a custom Naive Bayes probabilistic model,
                         the engine dynamically recalculates the board after every answer to reduce entropy and
                         confidently guess the target vehicle.</p>
                     <div class="tech-container">
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Next.js</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">React</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">TypeScript</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">TailwindCSS</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Drizzle</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Postgres</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Neon</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Vercel</h1>
-                        </div>
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=ffffff"
+                            alt="Next.js" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB"
+                            alt="React" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=ffffff"
+                            alt="TypeScript" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/TailwindCSS-0F172A?style=flat&logo=tailwindcss&logoColor=06B6D4"
+                            alt="TailwindCSS" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat&logo=drizzle&logoColor=000000"
+                            alt="Drizzle" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Postgres-4169E1?style=flat&logo=postgresql&logoColor=ffffff"
+                            alt="Postgres" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Neon-00E599?style=flat&logo=neon&logoColor=000000"
+                            alt="Neon" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=ffffff"
+                            alt="Vercel" height="28">
                     </div>
                 </div>
 
                 <!-- JOB salary data analysis -->
-                <div class="project-card">
+                <div class="project-card reveal">
+                    <a class="project-hero"
+                        href="https://job-salary-data-analysis-sgh3guxrlgvch7gp6azncf.streamlit.app/" target="_blank"
+                        rel="noopener" aria-label="Open the Job Salary Data Analysis &amp; Predictor live demo">
+                        <img src="media/images/salary_predictor.png" alt="Salary predictor dashboard">
+                        <span class="project-hero-badge">View live demo</span>
+                    </a>
                     <div class="tech-header">
                         <h3>Job Salary Data Analysis & Predictor</h3>
                         <div class="project-links">
@@ -88,31 +98,32 @@
                             <a href="https://job-salary-data-analysis-sgh3guxrlgvch7gp6azncf.streamlit.app/">Demo</a>
                         </div>
                     </div>
-                    <p class="project-desc">A end-to-end data analytics project analyzing 250,000 job postings to
+                    <p class="project-desc">An end-to-end data analytics project analyzing 250,000 job postings to
                         identify salary drivers, uncover market trends, and deploy a machine learning salary predictor
                         as a live web application.</p>
                     <div class="tech-container">
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">MySQL</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Python</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">PowerBI</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Streamlit</h1>
-                        </div>
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=ffffff"
+                            alt="MySQL" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=ffffff"
+                            alt="Python" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/PowerBI-F2C811?style=flat&logo=powerbi&logoColor=000000"
+                            alt="PowerBI" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=ffffff"
+                            alt="Streamlit" height="28">
                     </div>
                 </div>
 
                 <!-- DIMENSION SHIFT -->
-                <div class="project-card">
+                <div class="project-card reveal">
+                    <a class="project-hero" href="https://michi9450.github.io/491_Time_Platformer/" target="_blank"
+                        rel="noopener" aria-label="Open the Dimension Shift live demo">
+                        <img src="media/images/dimension_shift.png" alt="Dimension Shift gameplay">
+                        <span class="project-hero-badge">View live demo</span>
+                    </a>
                     <div class="tech-header">
                         <h3>Dimension Shift</h3>
                         <div class="project-links">
@@ -120,75 +131,100 @@
                             <a href="https://michi9450.github.io/491_Time_Platformer/">Demo</a>
                         </div>
                     </div>
-                    <p class="project-desc">Dimension shift is a browser-based puzzle platformer developed in JavaScript
+                    <p class="project-desc">Dimension Shift is a browser-based puzzle platformer developed in JavaScript
                         where players switch between two dimensions to navigate through obstacles and reach the exit.
                         The core mechanic allows the player to switch between different dimensional states of the world,
-                        altering the environment and revealing new pathways that are inaccessible in other states.
-                    </p>
+                        altering the environment and revealing new pathways that are inaccessible in other states.</p>
                     <div class="tech-container">
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">JavaScript</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">HTML</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">CSS</h1>
-                        </div>
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=000000"
+                            alt="JavaScript" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=ffffff"
+                            alt="HTML" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css&logoColor=ffffff" alt="CSS"
+                            height="28">
                     </div>
                 </div>
 
                 <!-- TIME OF DEATH -->
-                <div class="project-card">
+                <div class="project-card reveal">
+                    <a class="project-hero" href="https://temocam.itch.io/time-of-death" target="_blank" rel="noopener"
+                        aria-label="Open the Time of Death live demo">
+                        <img src="media/images/time_of_death.png" alt="Time of Death gameplay">
+                        <span class="project-hero-badge">View live demo</span>
+                    </a>
                     <div class="tech-header">
                         <h3>Time of Death</h3>
                         <div class="project-links">
                             <a href="https://temocam.itch.io/time-of-death">Demo</a>
                         </div>
                     </div>
-                    <p class="project-desc">A top down zombie shooter game developed during a weeklong gamejam using
-                        public assets in collaboration with one other student. Designed and programmed Enemy AI, player
-                        controls, and interactive UI. learned C# and Unity in 3 days and implemented all combat
-                        mechanics.
-                    </p>
+                    <p class="project-desc">A top-down zombie shooter developed during a weeklong game jam using
+                        public assets in collaboration with one other student. Designed and programmed enemy AI, player
+                        controls, and interactive UI. Learned C# and Unity in 3 days and implemented all combat
+                        mechanics.</p>
                     <div class="tech-container">
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Unity</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">C#</h1>
-                        </div>
-                        <div class="tech-item">
-                            <img src="media/images/next.jpg" alt="Next js logo">
-                            <h1 class="tech-name">Aseprite</h1>
-                        </div>
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Unity-222222?style=flat&logo=unity&logoColor=ffffff"
+                            alt="Unity" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/C%23-512BD4?style=flat&logo=csharp&logoColor=ffffff"
+                            alt="C#" height="28">
+                        <img class="tech-badge"
+                            src="https://img.shields.io/badge/Aseprite-7D929E?style=flat&logo=aseprite&logoColor=ffffff"
+                            alt="Aseprite" height="28">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="resume" class="">
+        <section class="section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <h3>Freelance AI Trainer</h3>
+                    <p class="timeline-meta">DataAnnotation, May 2026 – Present</p>
+                    <p>Benchmarked model outputs against strict technical guidelines, grading responses for factual
+                        accuracy, security vulnerabilities, and
+                        structural integrity. Completed 300+ tasks creating comprehensive test cases and debugging
+                        algorithms to train models
+                        in code generation, edge-case
+                        handling, and runtime efficiency</p>
+                </div>
+                <div class="timeline-item reveal">
+                    <h3>Fellow</h3>
+                    <p class="timeline-meta">Code2040, August 2024 – April 2025</p>
+                    <p>Selected for a nationally competitive program supporting early-career technologists from
+                        underrepresented backgrounds in
+                        software engineering. Participated in technical workshops and collaborative projects focused on
+                        software engineering and industry practices.</p>
+                </div>
+            </div>
+        </section>
 
+        <section class="section resume-section" id="resume">
+            <h2 class="section-title">Resume</h2>
+            <a href="media/Resume_Cuauhtemoc_Aguilar_Mandujano_Software_Engineer_2026-09.pdf" class="btn primary-btn"
+                download>Download resume (PDF)</a>
         </section>
 
         <section id="contact" class="section contact-section">
             <h2 class="section-title">Get In Touch</h2>
             <p>Looking for opportunities across software engineering and data analytics.</p>
-            <a href="mailto:your.email@example.com" class="btn primary-btn">Send Message</a>
+            <a href="mailto:temoaguilarm@gmail.com" class="btn primary-btn">Send Message</a>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Cuauhtemoc Aguilar Mandujano. Built with vanilla JS, HTML and CSS</p>
-        <!-- github link icon here -->
-        <!-- linkedin link icon here -->
+        <div class="footer-links">
+            <a href="https://github.com/aguilcua">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
